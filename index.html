@@ -190,7 +190,7 @@ footer a{color:var(--cream);text-underline-offset:4px}
   .top .wrap{height:68px}
   section{padding:112px 0}
 
-  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:calc(100vh - 68px);max-height:780px}
+  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(calc(100vh - 68px),780px)}
   .hero-panel{order:-1;align-content:center;gap:24px;padding:72px 56px 72px max(var(--gutter),calc((100vw - var(--max))/2 + var(--gutter)))}
   .hero-photo{height:auto}
   .hero-logo{width:168px}
@@ -204,10 +204,14 @@ footer a{color:var(--cream);text-underline-offset:4px}
   .feat.rev{grid-template-columns:5fr 7fr}
   .feat.rev .photo{order:2}
 
-  .order{grid-template-columns:6fr 6fr;gap:80px;align-items:start}
+  .order{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
   .form{margin-top:0;position:sticky;top:96px}
   .visit-grid{grid-template-columns:5fr 7fr;gap:64px;align-items:start}
   footer .grid{grid-template-columns:1.2fr 1fr 1fr}
+}
+@media(min-width:860px) and (max-width:1099px){
+  .form{padding:28px}
+  .form .row,.actions{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
