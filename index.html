@@ -124,6 +124,7 @@ section{padding:72px 0}
 .prod{display:grid;gap:44px;margin-top:44px}
 .prod .photo{aspect-ratio:4/3}
 .item{display:grid;gap:16px;align-content:start}
+.item.wide>div{display:grid;gap:16px;align-content:start;justify-items:start}
 .item .num{font-variant-numeric:lining-nums;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.08em;color:var(--crust)}
 .item h3{font-size:clamp(1.9rem,6vw,2.6rem)}
 .item p{color:var(--muted);max-width:40ch}
@@ -269,7 +270,7 @@ footer a{color:var(--cream);text-underline-offset:4px}
         <div>
           <span class="num">03</span>
           <h3>Bolos por encomenda</h3>
-          <p style="margin:14px 0 22px">Aniversários, batizados, casamentos e festas. Diga-nos a data e quantas pessoas, e tratamos do resto.</p>
+          <p style="margin:0 0 6px">Aniversários, batizados, casamentos e festas. Diga-nos a data e quantas pessoas, e tratamos do resto.</p>
           <a class="btn btn-dark" href="#encomendas"><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Fazer uma encomenda</a>
         </div>
       </article>
